@@ -7,9 +7,8 @@ Humanitarian Activity Streams (HAS) is external vocabulary for [Activity Streams
 ## Activity Streams
 
 Activity Streams is a format for representing events or activities in
-a social network or in *collaborative software*. It's a
-[JSON](http://json.org/) format (at least, we only support the JSON
-format), meaning that on the wire data looks like JavaScript literals.
+a social network or in *collaborative software*. It's being written in
+[JSON](http://json.org/) format.
 
 Activity Streams data includes a few different kinds of things:
 
@@ -30,6 +29,22 @@ Activity Streams data includes a few different kinds of things:
   `location` or a `target`. Activities also have an `id` property that
   uniquely identifies the activity.
 * collections: These are ordered lists of activities.
+
+## Humanitarian Activity Streams
+
+| Objects  Types      | Objects  Types          | Description             |
+| -------------       |:-------------:| -----:|
+| Assesment           | right-aligned | $1600 |
+| Beneficiary         | centered      |   $12 |
+| zebra stripes       | are neat      |    $1 |
+| col 2 is            | centered      |   $12 |
+| zebra stripes       | are neat      |    $1 |
+| col 2 is            | centered      |   $12 |
+| zebra stripes       | are neat      |    $1 |
+| col 2 is            | centered      |   $12 |
+| zebra stripes       | are neat      |    $1 |
+| col 2 is            | centered      |   $12 |
+| zebra stripes       | are neat      |    $1 |
 
 An example of an Activity Streams activity:
 
