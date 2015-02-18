@@ -30,46 +30,53 @@ Activity Streams data includes a few different kinds of things:
   uniquely identifies the activity.
 * collections: These are ordered lists of activities.
 
-## Humanitarian Activity Streams
+## Humanitarian Activity Streams (examples)
 
 | Objects  Types      | Objects  Types          | Description             |
 | -------------       |:-------------:| -----:|
-| Assesment           | right-aligned | $1600 |
+| Assesment          | assessment | $1600 |
 | Beneficiary         | centered      |   $12 |
-| zebra stripes       | are neat      |    $1 |
-| col 2 is            | centered      |   $12 |
-| zebra stripes       | are neat      |    $1 |
-| col 2 is            | centered      |   $12 |
-| zebra stripes       | are neat      |    $1 |
-| col 2 is            | centered      |   $12 |
-| zebra stripes       | are neat      |    $1 |
-| col 2 is            | centered      |   $12 |
-| zebra stripes       | are neat      |    $1 |
+| Distribution      | are neat      |    $1 |
+| Office           | centered      |   $12 |
+| Warehouse       | are neat      |    $1 |
+| Security Incident            | centered      |   $12 |
+| Training      | are neat      |    $1 |
+| IDP Camp            | centered      |   $12 |
+| Shelter  | are neat      |    $1 |
+
 
 An example of an Activity Streams activity:
 
     {
-        "id": "http://coding.example/api/activity/bwkposthw",
+        "id": "c1kj334jii",
         "actor": {
-            "id": "acct:bwk@coding.example",
-            "displayName": "Brian Kernighan",
+            "id": "acct:finan@reliefcloud.example",
+            "displayName": "Dan Finan",
             "objectType": "person",
-            "url": "http://coding.example/bwk"
+            "url": "http://reliefcloud.example/finan"
         },
-        "verb": "post",
+        "verb": "read",
         "object": {
-            "id": "http://coding.example/api/note/helloworld",
-            "content": "Hello, World!"
-            "objectType": "note"
+            "id": "http://reliefweb.int/disaster/tc-2013-000139-phl",
+            "name": "Typhoon Haiyan - Nov 2013"
+            "objectType": "disaster"
+        },
+        "target": {
+            "id": "http://reliefweb.int/",
+            "name": "ReliefWeb"
+            "objectType": "page"
         },
         "published": "1973-01-01T00:00:00"
     }
+
+
+The activity would read:  'Dan Finan read about Typhoon Haiyan on RelifWeb'
 
 This activity has an `id` to uniquely identify it, an `actor`, a
 `verb`, and an `object`. It also has a publication timestamp,
 `published`. The actor is a "person" with a name and an `id` that is
 an "acct:" URI, as well as an `url` of a profile page. The object is a
-"note".
+"disaster", as defined on RelifWebs API and the 
 
 The activity streams specification is long; there are also several
 extensions that pump.io supports. The
