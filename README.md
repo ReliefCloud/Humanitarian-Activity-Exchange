@@ -1,40 +1,13 @@
 Humanitarian-Activity-Streams
 ==============================
 
-Humanitarian Activity Exchange (HAX) is set of json schema that defines humanitarian activities with location data (GeoJson) for applications aiming to improve the coordination among relief response workers
+Humanitarian Activity Streams (HAS) is external vocabulary for [Activity Streams](http://activitystrea.ms/) schema which includes object definitions specific to crisis response.  An open source, community developed standard that will allow web and mobile applications to share humanitarian worker's activities to improvbe coordiation and accountability.
 
-pump.io API is based on three major technologies:
-
-- [Activity Streams](http://activitystrea.ms/) for data format
-- [OAuth 1.0](http://tools.ietf.org/html/rfc5849)
-- [Web Host Metadata](http://tools.ietf.org/html/rfc6415)
-
-There are some bits of other things floating around, like:
-
-- [OpenID Connect Dynamic Client Registration](http://openid.net/specs/openid-connect-registration-1_0.html)
-- [Dialback Access Authentication](http://tools.ietf.org/html/draft-prodromou-dialback-00)
-
-Finally, the API uses
-[REST](http://en.wikipedia.org/wiki/Representational_state_transfer)-ish
-principles and follows some of the patterns, but none of the actual
-requirements, of [The Atom Publishing Protocol](http://tools.ietf.org/html/rfc5023).
-
-## TL;DR
-
-Here's the quick start version of the API:
-
-* Register a new OAuth client by posting to the client registration endpoint.
-* Use OAuth 1.0 to get an OAuth token for the user.
-* Post to the user's activity outbox feed to create new
-  activities. These can create new content, respond to existing
-  content, or modify the social graph.
-* Read from the user's activity inbox to see stuff that other people
-  have sent to them.
 
 ## Activity Streams
 
 Activity Streams is a format for representing events or activities in
-a social network or in collaborative software. It's a
+a social network or in *collaborative software*. It's a
 [JSON](http://json.org/) format (at least, we only support the JSON
 format), meaning that on the wire data looks like JavaScript literals.
 
