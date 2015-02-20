@@ -1,5 +1,5 @@
 |Field|	Description|
-|-|-|
+|---|----|
 |url|	Canonical URL of entry.|
 |title|	Title of entry.|
 |body	|Body of entry in Markdown format.|
