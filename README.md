@@ -34,6 +34,7 @@ Activity Streams data includes a few different kinds of things:
 
 | Objects  Types      | Objects  Types          | Description             |
 | -------------       |:-------------:| -----:|
+| Disaster          | disaster | $1600 |
 | Assesment          | assessment | $1600 |
 | Beneficiary         | centered      |   $12 |
 | Distribution      | are neat      |    $1 |
