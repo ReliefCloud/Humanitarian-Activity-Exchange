@@ -1,3 +1,35 @@
+
+|Field|	Description|
+|---|---|
+|url	|Canonical URL of entry.|
+|name|	Name assigned to the disaster based on ReliefWeb disaster naming convention.|
+|glide|	GLobal IDEntifier number (GLIDE) of the disaster.|
+|current	|Deprecated, use "status" instead Boolean flag to indicate if the disaster is active or inactive.
+|featured	|Boolean flag to indicate if the disaster is featured on the ReliefWeb home page.
+description	Description of the disaster in Markdown format.
+description-html	Description of the disaster in HTML format.
+date	Date when the event occurred (ISO 8601).
+date.created	Date when the entry was created on ReliefWeb (ISO 8601)
+primary_country	Container for primary country fields. Primary country is the single country most relevant to the entry.
+primary_country.id	Unique identifier of the primary country.
+primary_country.name	Name of the primary country in English. See list of taxonomy terms.
+primary_country.shortname	Short name of the primary country. See list of taxonomy terms.
+primary_country.iso3	ISO 3166-1 alpha-3 code of the primary country.
+country	Container for country fields.
+country.id	Unique identifier of the country.
+country.primary	Boolean flag to indicate if the country is a primary country.
+country.name	Name of the country in English. See list of taxonomy terms.
+country.shortname	Short name of the source, typically a well-known acronym e.g. "UNICEF"
+country.iso3	ISO 3166-1 alpha-3 code of the country.
+primary_type	Containter for primary disaster type assigned to the disaster.
+primary_type.id	Unique identifier of the primary disaster type of the disaster.
+primary_type.name	Name of the primary disaster type assigned to the entry.
+status	Status of the disaster (current, alert or past)
+type	Containter for disaster types assigned to the disaster.
+type.id	Unique identifier of the disaster type of the disaster. See list of taxonomy terms.
+type.primary	Primary disaster type assigned to the disaster assigned to entry. See list of taxonomy terms.
+type.name	Name of the disaster type assigned to the entry. See list of taxonomy terms.
+
  {
     "id": 11880,
     "name": "Zimbabwe: Floods - Jan 2013",
